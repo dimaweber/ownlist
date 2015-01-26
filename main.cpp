@@ -194,7 +194,7 @@ void testFunction(OwnList<T> list)
     list.insertFirst(5);
     {
         T checkArray[] = {5};
-        std::cout << "create empty list: ";
+        std::cout << "insert head 5: ";
         if ( !list.compareArray(checkArray, sizeof(checkArray)/ sizeof(T)) )
             std::cerr << "fail\n";
         else
@@ -204,7 +204,7 @@ void testFunction(OwnList<T> list)
     list.insertLast(10);
     {
         T checkArray[] = {5, 10};
-        std::cout << "create empty list: ";
+        std::cout << "insert tail 10: ";
         if ( !list.compareArray(checkArray, sizeof(checkArray)/ sizeof(T)) )
             std::cerr << "fail\n";
         else
@@ -215,7 +215,7 @@ void testFunction(OwnList<T> list)
     list.insertFirst(3);
     {
         T checkArray[] = {3, 5, 10};
-        std::cout << "create empty list: ";
+        std::cout << "insert head 3: ";
         if ( !list.compareArray(checkArray, sizeof(checkArray)/ sizeof(T)) )
             std::cerr << "fail\n";
         else
@@ -226,7 +226,7 @@ void testFunction(OwnList<T> list)
     list.insertLast(15);
     {
         T checkArray[] = {3, 5, 10, 15};
-        std::cout << "create empty list: ";
+        std::cout << "insert tail 15: ";
         if ( !list.compareArray(checkArray, sizeof(checkArray)/ sizeof(T)) )
             std::cerr << "fail\n";
         else
@@ -244,7 +244,7 @@ void testFunction(OwnList<T> list)
 
     {
         T checkArray[] = {15, 10, 5, 3};
-        std::cout << "create empty list: ";
+        std::cout << "revert check: ";
         if ( !list.compareArray(checkArray, sizeof(checkArray)/ sizeof(T)) )
             std::cerr << "fail\n";
         else
